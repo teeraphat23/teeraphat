@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Teeraphat Tanya - Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f1115;
+      color: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1d23;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ffc8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #00ffc8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(to bottom, #1a1d23, #0f1115);
+    }
+
+    .hero img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #00ffc8;
+      box-shadow: 0 0 30px rgba(0, 255, 200, 0.3);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin: 10px 0 5px;
+    }
+
+    .hero h2 {
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      background-color: #1a1d23;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+
+    .section h3 {
+      color: #00ffc8;
+      margin-bottom: 15px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .info-grid p {
+      margin: 0 0 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      color: #aaa;
+      background-color: #1a1d23;
+    }
+
+    @media (max-width: 768px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">TEERAPHAT.TANYA</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#info">Personal Info</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero" id="home" data-aos="zoom-in">
+    <img src="profile2.jpg" alt="Profile Image">
+    <h2>Hello</h2>
+    <h1>I am Teeraphat Tanya</h1>
+  </div>
+
+  <div class="container">
+
+    <!-- About -->
+    <div class="section" id="about" data-aos="fade-up">
+      <h3>เกี่ยวกับฉัน (About Me)</h3>
+      <p>
+        ชื่อ นายธีรภัทร ตันยะ ปัจจุบันกำลังศึกษาอยู่สาขาวิทยาการคอมพิวเตอร์  
+        ชั้นปีที่ 3 คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชมงคลสุวรรณภูมิ วิทยาเขตนนทบุรี  
+        สนใจในเรื่องซอฟต์แวร์ และกำลังมุ่งมั่นศึกษาเกี่ยวกับด้านนี้เพื่อพัฒนาทักษะทั้งด้านการเขียนโปรแกรม  
+        และการวางระบบต่าง ๆ อย่างจริงจัง  
+        <br><br>
+        ผมสามารถสื่อสารภาษาอังกฤษได้ดีในระดับหนึ่ง และพร้อมที่จะเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ  
+        รวมถึงสามารถปรับตัวกับการทำงานร่วมกับผู้อื่นได้ดี
+      </p>
+    </div>
+
+    <!-- Personal Info -->
+    <div class="section" id="info" data-aos="fade-up">
+      <h3>ข้อมูลส่วนตัว (Personal Info)</h3>
+      <div class="info-grid">
+        <div>
+          <p><strong>ชื่อ-นามสกุล:</strong> นาย ธีรภัทร ตันยะ</p>
+          <p><strong>ชื่อเล่น:</strong> บลู (Blue)</p>
+          <p><strong>อายุ:</strong> 23 ปี</p>
+          <p><strong>วันเกิด:</strong> 28 กรกฎาคม 2545</p>
+        </div>
+        <div>
+          <p><strong>ที่อยู่:</strong> หมู่บ้านหนองปาตอง ต.หนองยาว</p>
+          <p>อ.พนมสารคาม จ.ฉะเชิงเทรา 24120</p>
+          <p><strong>งานอดิเรก:</strong> ฟังเพลง, ท่องเที่ยว</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section" id="education" data-aos="fade-up">
+      <h3>ประวัติการศึกษา (Education)</h3>
+      <p><strong>มัธยมศึกษา:</strong> โรงเรียนพนมสารคาม “พนมอดุลวิทยา”</p>
+      <p><strong>ปริญญาตรี:</strong> มหาวิทยาลัยราชมงคลสุวรรณภูมิ นนทบุรี</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact" data-aos="fade-up">
+      <h3>ช่องทางการติดต่อ (Contact)</h3>
+      <p><strong>📱 โทร:</strong> 092-709-3737</p>
+      <p><strong>💬 LINE ID:</strong> trp45</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 ธีรภัทร ตันยะ | All Rights Reserved.
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
